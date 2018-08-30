@@ -21,5 +21,13 @@ pipeline {
         echo 'Done!'
       }
     }
+    stage('') {
+      steps {
+        script {
+          echo "${env.BRANCH_NAME}"
+        }
+
+      }
+    }
   }
 }
